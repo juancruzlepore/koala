@@ -17,9 +17,8 @@ import { DateSimplifiedViewPipe } from './date-simplified-view.pipe';
     HttpClientModule,
     MatCardModule,
     BrowserAnimationsModule,
-    DateSimplifiedViewPipe
   ],
-  exports: [],
+  exports: [DateSimplifiedViewPipe],
   providers: [],
   bootstrap: [AppComponent]
 })
