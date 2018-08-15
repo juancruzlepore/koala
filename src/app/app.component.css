@@ -1,0 +1,11 @@
+#next-date-card{
+  /*width: 50%;*/
+  /*height: 5em;*/
+  margin: 25% 20% 60%;
+  padding: 2em;
+  text-align: center;
+}
+
+#next-date-card > mat-card-content{
+  font-size: 3em;
+}

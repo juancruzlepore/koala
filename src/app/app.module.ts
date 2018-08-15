@@ -5,7 +5,7 @@ import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { DateSimplifiedViewPipe } from './date-simplified-view.pipe';
+import {DateSimplifiedViewPipe} from './date-simplified-view.pipe';
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import { DateSimplifiedViewPipe } from './date-simplified-view.pipe';
     MatCardModule,
     BrowserAnimationsModule,
   ],
-  exports: [DateSimplifiedViewPipe],
   providers: [],
+  exports: [DateSimplifiedViewPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {
