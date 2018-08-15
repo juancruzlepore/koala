@@ -6,16 +6,21 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DateSimplifiedViewPipe} from './date-simplified-view.pipe';
+import {MoviesComponent} from './movies/movies.component';
+import {MatListModule} from '@angular/material';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DateSimplifiedViewPipe
+    DateSimplifiedViewPipe,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     MatCardModule,
+    MatListModule,
     BrowserAnimationsModule,
   ],
   providers: [],

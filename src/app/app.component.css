@@ -1,8 +1,13 @@
+body {
+  margin: 2em 20%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-card{
+  margin: 1em;
+}
+
 #next-date-card{
-  /*width: 50%;*/
-  /*height: 5em;*/
-  margin: 25% 20% 60%;
-  padding: 2em;
   text-align: center;
 }
 

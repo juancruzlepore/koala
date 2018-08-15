@@ -6,6 +6,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class DateSimplifiedViewPipe implements PipeTransform {
 
   transform(value: Date, args?: any): String {
+    if(value == null){
+      return "Loading..."
+    }
     if(value.getFullYear() > 1970) {
       return (value.getFullYear() - 1970) + " años"
     } else if(value.getMonth() > 0) {
