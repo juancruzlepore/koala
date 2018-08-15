@@ -9,9 +9,13 @@ import {HttpService} from './http.service';
 })
 export class AppComponent {
   lastDate: Date;
+  dateDifference: Date;
   title = 'koala';
   constructor(private httpService: HttpService){
-    this.httpService.getLastDate().subscribe((data: string) => this.lastDate = new Date(data));
+    this.httpService.getLastDate().subscribe((data: string) => {
+      this.lastDate = new Date(data);
+      this.dateDifference = new Date(this.lastDate.getTime() - Date.now());
+    });
   }
 
 }
