@@ -1,0 +1,10 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+html{
+  text-align: center;
+}
+#main-container {
+  display: inline-block;
+  max-width: 65em;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}

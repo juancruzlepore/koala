@@ -1,14 +1,13 @@
-body {
-  margin: 2em 20%;
-  font-family: 'Roboto', sans-serif;
-}
-
 .my-card{
-  margin: 1em;
+  padding: 1em;
+  margin: 1em 1em 0 1em;
+  display: inline-block;
 }
 
 #next-date-card{
   text-align: center;
+  width: 100%;
+
 }
 
 #next-date-card > mat-card-content{

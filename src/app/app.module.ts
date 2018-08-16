@@ -8,13 +8,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DateSimplifiedViewPipe} from './date-simplified-view.pipe';
 import {MoviesComponent} from './movies/movies.component';
 import {MatListModule} from '@angular/material';
+import { MessageComponent } from './message/message.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DateSimplifiedViewPipe,
-    MoviesComponent
+    MoviesComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

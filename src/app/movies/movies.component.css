@@ -1,3 +1,12 @@
-#movies-card{
-  width: 50%;
+@media screen and (min-width: 601px){
+  #movies-card{
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #movies-card{
+    width: 100%;
+  }
 }

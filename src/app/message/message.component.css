@@ -1,0 +1,20 @@
+#message-card{
+  text-align: center;
+}
+
+@media screen and (min-width: 601px){
+  #message-card{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #message-card{
+    width: 100%;
+  }
+}
+
+.message-emoji {
+  font-size: 6em;
+  text-align: center;
+}
