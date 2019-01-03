@@ -2,14 +2,10 @@
   padding: 1em;
   margin: 1em 1em 0 1em;
   display: inline-block;
-}
-
-#next-date-card{
-  text-align: center;
   width: 100%;
-
 }
 
-#next-date-card > mat-card-content{
-  font-size: 3em;
+.plus-button{
+  font-size: 1.5em;
 }
+

@@ -8,15 +8,22 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DateSimplifiedViewPipe} from './date-simplified-view.pipe';
 import {MoviesComponent} from './movies/movies.component';
 import {MatListModule} from '@angular/material';
-import { MessageComponent } from './message/message.component';
-
+import {MessageComponent} from './message/message.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+import { NextDateTrackerComponent } from './next-date-tracker/next-date-tracker.component';
+import { AddDateDialogComponent } from './add-date-dialog/add-date-dialog.component';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DateSimplifiedViewPipe,
     MoviesComponent,
-    MessageComponent
+    MessageComponent,
+    NextDateTrackerComponent,
+    AddDateDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,10 +31,18 @@ import { MessageComponent } from './message/message.component';
     MatCardModule,
     MatListModule,
     BrowserAnimationsModule,
+    FormsModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatInputModule,
   ],
   providers: [],
-  exports: [DateSimplifiedViewPipe],
-  bootstrap: [AppComponent]
+  exports: [
+    DateSimplifiedViewPipe,
+    AddDateDialogComponent,
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [AddDateDialogComponent]
 })
 export class AppModule {
 }

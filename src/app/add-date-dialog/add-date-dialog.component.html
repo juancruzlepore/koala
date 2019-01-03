@@ -1,0 +1,9 @@
+<form class="date-picker-dialog">
+  <mat-form-field class="">
+    <input matInput placeholder="Date start" type="datetime-local" [(ngModel)]="data.dateStart" name="dateStart">
+  </mat-form-field>
+  <mat-form-field class="">
+    <input matInput placeholder="Date end" type="datetime-local"  [(ngModel)]="data.dateEnd" name="dateEnd">
+  </mat-form-field>
+  <button mat-raised-button [mat-dialog-close]="data">Guardar</button>
+</form>

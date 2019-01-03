@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MessageComponent implements OnInit {
 
   constructor() { }
-  message = "¡Suerte en tu exámen amor!";
+  message = "¡Suerte en tu viaje a Munich!";
   emoji = '🍀';
   ngOnInit() {
 

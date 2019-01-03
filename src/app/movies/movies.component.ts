@@ -13,7 +13,8 @@ export class MoviesComponent implements OnInit {
   constructor(private http: HttpService) {
     // Object.assign(this.movieList, JSON.parse("[{\"creationDate\":\"2018-08-15T21:23:19.950401Z\",\"addedBy\":\"Juan\",\"name\":\"Ant-man\",\"seen\":false}," +
     //   "{\"creationDate\":\"2018-08-15T21:23:19.950401Z\",\"addedBy\":\"Juan\",\"name\":\"Ant-man 2\",\"seen\":false}]"));
-    http.getMovieList().subscribe(resp => Object.assign(this.movieList, JSON.parse(resp)));
+    const movieListPromise = http.getMovieList();
+    movieListPromise.subscribe(resp => Object.assign(this.movieList, JSON.parse(resp)), error => console.log(error))
   }
 
   ngOnInit() {

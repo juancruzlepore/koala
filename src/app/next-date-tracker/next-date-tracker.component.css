@@ -1,0 +1,9 @@
+#next-date-card{
+  text-align: center;
+  width: 100%;
+
+}
+
+#next-date-card > mat-card-content{
+  font-size: 3em;
+}

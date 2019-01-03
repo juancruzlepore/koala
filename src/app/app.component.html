@@ -1,7 +1,9 @@
-<mat-card id="next-date-card" class="my-card">
-  <mat-card-title>😍 Tiempo hasta que nos veamos</mat-card-title>
-  <mat-card-content>{{dateDifference | dateSimplifiedView}}</mat-card-content>
-</mat-card>
-<div>
-<app-movies></app-movies><app-message></app-message>
+<app-next-date-tracker></app-next-date-tracker>
+<div class="flexb-container">
+  <div class="flexb-column">
+    <app-movies></app-movies>
+  </div>
+  <div class="flexb-column">
+    <app-message></app-message>
+  </div>
 </div>

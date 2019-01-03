@@ -1,0 +1,7 @@
+<mat-card id="next-date-card" class="my-card">
+  <mat-card-title *ngIf="isThereNextDate && differenceInMilliseconds > 0">😍 Tiempo hasta que nos veamos</mat-card-title>
+  <mat-card-title *ngIf="isThereNextDate && differenceInMilliseconds <= 0">👫</mat-card-title>
+  <mat-card-content *ngIf="isThereNextDate && differenceInMilliseconds > 0">{{dateDifference | dateSimplifiedView}}</mat-card-content>
+  <mat-card-title *ngIf="!isThereNextDate">Cuándo nos vemos? 😊</mat-card-title>
+  <mat-card-actions><button mat-mini-fab class="plus-button" (click)="openDialog()">+</button></mat-card-actions>
+</mat-card>
