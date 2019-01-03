@@ -51,7 +51,7 @@ export class NextDateTrackerComponent implements OnInit {
   }
 
   addDate(dateStart: Date, dateEnd: Date) {
-    this.httpService.addDate(dateStart, dateEnd);
+    this.httpService.addDate(dateStart, dateEnd).subscribe();
   }
 
   ngOnInit() {

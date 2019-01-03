@@ -19,10 +19,10 @@ export class HttpService {
     return this.http.get<string>( this.BASE_URL + "/movies/all", {});
   }
 
-  addDate(dateStart: Date, dateEnd: Date) {
+  addDate(dateStart: Date, dateEnd: Date): Observable<string> {
     return this.http.post(this.BASE_URL + "/dates/add", {
       dateStart: formatDate(dateStart, "yyyy-MM-dd HH:mm", "en-US"),
       dateEnd: formatDate(dateEnd, "yyyy-MM-dd HH:mm", "en-US")
-    })
+    }) as Observable<string>;
   }
 }
